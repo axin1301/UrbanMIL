@@ -1,5 +1,11 @@
 # This is the repo for UrbanMIL: Urban Multimodal In-Context Learning: Multi-Granular Retrieval and Contextual Reasoning for Urban Indicator Prediction
 
+## Introduction
+UrbanMIL is a retrieval-based framework that performs urban indicator prediction through multi-granular retrieval and contextual reasoning. Each urban region is represented by satellite and street view imagery, capturing complementary macro-scale urban morphology and micro-scale ground-level semantics. We introduce a semantic-aware retrieval mechanism that jointly exploits aerial morphology, ground-level urban environments, instance-level cross-view correspondences, and multimodal large language model (MLLM)-derived urban semantic attributes to retrieve semantically related urban regions across multiple granularities. We further design a contextual reasoning module that refines retrieval-based estimation by modeling latent semantic discrepancies, functional relationships, and contextual uncertainty within retrieved urban neighborhoods.
+
+## Framewore
+![UrbanWell framework](./figs/fig2-compressed.png)
+
 This folder contains a cleaned subset of the UrbanMIL codebase for anonymous submission.
 
 ## Directory Structure
