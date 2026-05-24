@@ -20,8 +20,11 @@ This folder contains a cleaned subset of the UrbanMIL codebase for anonymous sub
 
 ## Example command:
 
+```powershell
 - python extract_embed_more_ind.py --json_path ../dataset/UrbanSensing_data/all_global_pop_task.json --indicator pop
+```
 
+```powershell
 - python extract_semantics_qwen_structured_all_indicator_parallel.py \
   --json_path ../dataset/UrbanSensing_data/all_global_pop_task.json \
   --out_json ../outputs/region_semantic_structured_pop_qwen.json \
@@ -31,9 +34,11 @@ This folder contains a cleaned subset of the UrbanMIL codebase for anonymous sub
   --max_new_tokens 512 \
   --flush_every 10 \
   --resume
+```
 
-
+```powershell
 - python train_ind_semretr_reasoning_mech_full.py   --indicator gdp   --feature_pt ../outputs/region_features_gdp.pt   --semantic_pt ../outputs/region_semantic_emb_gdp_qwen_v2.pt \
 --mechanism_json ../outputs/region_semantic_structured_gdp_qwen_repaired.json   --reason_arch retr_residual   --selection_metric r2   --target_transform raw   --reg_loss huber   --n_bins 10   --seed 41 \
 --use_sims sat,stv,inst   --run_all_ablations   --ablation_mode no_sem   --topk 10
+```
 
